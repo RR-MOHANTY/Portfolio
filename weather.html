@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather App</h1>
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button id="searchBtn" class="btn">Search</button>
+    </header>
+
+    <main>
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+
+      <div id="weatherInfo" class="weather-info hidden">
+        <h2 id="cityName"></h2>
+        <img id="weatherIcon" src="weathericon.jpeg" alt="Icon">
+        <p><span id="currentTemp"></span>°C</p>
+        <p id="weatherDescription"></p>
+        <p>Feels like: <span id="feelsLike"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind: <span id="windSpeed"></span></p>
+      </div>
+
+      <div id="errorMessage" class="error-message hidden">
+        <p>City not found. Try again.</p>
+      </div>
+
+      <div class="recent-searches">
+        <h3>Recent Searches</h3>
+        <div id="recentList"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./script3.js"></script>
+</body>
+</html>
