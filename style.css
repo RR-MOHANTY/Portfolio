@@ -189,32 +189,74 @@ footer {
     padding: 2rem 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 1024px) {
+    /* Navigation */
     .nav-container {
-        flex-direction: column;
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
-    .nav-menu {
-        margin-top: 1rem;
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-menu li {
+        margin-left: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 2rem 80px;
+        text-align: center;
     }
 
     .hero-title-line {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        display: flex;
         justify-content: center;
-        gap: 0.5rem;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: nowrap;
         white-space: nowrap;
-        overflow-x: auto;
     }
 
     .hero-title-line .logo,
     .single-line-name {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
-    .skills ul {
-        flex-direction: column;
-        align-items: center;
+    .hero p {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
     }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+
+    /* Skills Section */
+    .skills ul {
+        gap: 0.75rem;
+    }
+
+    .skills li {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Contact Section */
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    input, textarea {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
 }
