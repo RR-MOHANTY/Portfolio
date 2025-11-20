@@ -72,24 +72,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .hero-title-line .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
-.hero-title-line h1 {
+.single-line-name {
     font-size: 1.5rem;
     margin: 0;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
 }
 
 .hero p {
@@ -197,19 +199,17 @@ footer {
         margin-top: 1rem;
     }
 
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
     .hero-title-line {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 0.5rem;
+        white-space: nowrap;
+        overflow-x: auto;
     }
 
     .hero-title-line .logo,
-    .hero-title-line h1 {
+    .single-line-name {
         font-size: 1.2rem;
     }
 
